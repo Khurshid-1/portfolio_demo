@@ -17,6 +17,10 @@ const Intro = () =>
                     <h1 className='text-yellow-500 font-serif font-medium text-6xl '>
                         Khusrhid Alam
                     </h1>
+
+                    <h1 className='text-red-950 text-5xl font-light mt-4'>
+                        Full Stack Web Devloper
+                    </h1>
                 </div>
 
                 <div className="ml-3 mt-16">
@@ -31,7 +35,7 @@ const Intro = () =>
 
 
             <div className="px-8 sm:px-20 flex justify-center items-center">
-                <div className='h-[550px] w-[355px]'>
+                <div className='h-[330px] w-[213px] sm:h-[550px] sm:w-[355px]'>
                     <img src={my1} alt="MyImg" className='h-full w-full object-fit' />
                 </div>
 

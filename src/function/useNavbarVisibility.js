@@ -9,7 +9,7 @@ const useNavbarVisibility = () =>
         const handleScroll = () =>
         {
             const scrollTop = window.scrollY;
-            const triggerPoint = 700;
+            const triggerPoint = 400;
             if (scrollTop > triggerPoint) {
                 setScrolling(true);
             } else {
