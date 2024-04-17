@@ -7,7 +7,7 @@ import { faGithub, faLinkedinIn, faInstagram } from '@fortawesome/free-brands-sv
 const Intro = () =>
 {
     return (
-        <section id="home" className={` flex flex-col md:flex-row`}>
+        <section id="home" className={` flex flex-col md:flex-row p-4 sm:p-0`}>
             <div className={`flex-1 ${styles.flexAllStart} flex-col xl:px-4 sm:px-28 mt-16`}>
                 <div className='flex flex-col'>
                     <h1 className='text-red-950 text-5xl font-light mb-4'>
