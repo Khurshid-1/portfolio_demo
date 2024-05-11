@@ -1,6 +1,6 @@
 import React from 'react';
 import my1 from '../Assets/my.png';
-import glasses from '../Assets/glasses.png'
+// import glasses from '../Assets/glasses.png'
 import styles from '../Style';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedinIn, faInstagram, } from '@fortawesome/free-brands-svg-icons';
