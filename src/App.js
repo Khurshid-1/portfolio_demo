@@ -6,15 +6,18 @@ const App = () =>
 {
   const scrolling = useNavbarVisibility();
   return (
-    <div className="bg-gradient-to-br from-teal-200 to-cyan-200 w-full overflow-hidden">
+    <div className=" bg-gradient-to-br from-pink-50 to-pink-100 w-full overflow-hidden">
       <div className={`${styles.flexCenter} h-16`}>
-        <div className={`${styles.navContainer} ${styles.flexCenter} ${styles.NavPadding} ${scrolling ? "bg-teal-300 " : "bg-transparent "} transition-all duration-1000 `}>
+        <div className={`${styles.navContainer} ${styles.flexCenter} ${styles.NavPadding} ${scrolling ? "bg-yellow-300 " : "bg-transparent "} transition-all duration-1000 `}>
           <Navbar />
         </div>
       </div>
 
       <div className={`bg-primary ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
+          <Intro />
+          <Intro />
+          <Intro />
           <Intro />
           <Intro />
           <Intro />
