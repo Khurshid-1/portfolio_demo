@@ -17,7 +17,7 @@ const styles = {
     paddingX: "sm:px-10 px-4",
     paddingY: "sm:py-10 py-4",
     padding: "sm:px-10 px-4 sm:py-8 py-2",
-    NavPadding: "sm:px-10 px-2 py-1 sm:py-2 ",
+    NavPadding: "sm:px-10 sm:py-2 px-2 py-2 ",
     homePadding: "sm:px-10 pt-24 bt-4",
 
 

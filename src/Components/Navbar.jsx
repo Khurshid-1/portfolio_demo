@@ -11,8 +11,10 @@ const Navbar = () =>
     const handleToggleClick = () => setToggle(!toggle);
     const handleNavmenuClick = (title) =>
     {
-        setActive(title); // Add the missing parameter `title` here
+        setActive(title);
+        setToggle(false); // Add the missing parameter `title` here
         // Close the mobile menu when a menu item is clicked
+
     };
 
     return (
@@ -42,9 +44,10 @@ const Navbar = () =>
                 />
             </div>
 
+            {/* Mobile Nav */}
+
             <div
-                className={`${!toggle ? "hidden" : "flex"
-                    } w-full p-6 bg-gradient-to-br from-slate-600 to-gray-400 absolute top-10 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
+                className={`${!toggle ? "hidden" : "flex"} top-10 w-full p-6 bg-gradient-to-br from-slate-600 to-gray-400 absolute left-0 right-0 min-w-[140px] rounded-xl sidebar`}
             >
                 <ul className="list-none flex justify-end items-start flex-1 flex-col">
                     {navLinks.map((nav, index) => (
@@ -52,7 +55,7 @@ const Navbar = () =>
                             key={nav.id}
                             className={`font-poppins font-medium cursor-pointer text-[16px] ${active === nav.title ? "text-white" : "text-dimWhite"
                                 } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
-                            onClick={() => setActive(nav.title)}
+                            onClick={handleNavmenuClick}
                         >
                             <a href={`#${nav.id}`}>{nav.title}</a>
                         </li>

@@ -11,7 +11,7 @@ const Intro = () =>
 {
 
     return (
-        <section id="home" className={` flex flex-col-reverse md:flex-row p-4 sm:p-0 `}>
+        <section id="home" className={` flex flex-col-reverse md:flex-row p-4 sm:p-0 mt-10 `}>
             <div className={`flex-1 ${styles.flexAllStart} flex-col xl:px-4 sm:px-28 mt-16`}>
                 <motion.div className='flex flex-col'
                     initial={{
